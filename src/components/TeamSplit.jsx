@@ -3,7 +3,7 @@ import Icon from './Icon';
 
 export default function TeamSplit() {
   return (
-    <section className="sec" style={{ background: 'var(--paper)' }}>
+    <section className="sec sec-team" style={{ background: 'var(--paper)' }}>
       <div className="wrap">
         <Split imageUrl="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=1100">
           <div className="eyebrow">

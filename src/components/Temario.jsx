@@ -188,13 +188,13 @@ export default function Temario() {
   return (
     <section className="sec temario">
       <div className="wrap">
-        <h2>¿Qué aprenderás?</h2>
+        <h2>¿Qué <span className="accent">aprenderás</span>?</h2>
         <p className="subt">
           25 semanas, un pre-work de Figma y 6 labs prácticos repartidos por todo el programa.
           Aprendes haciendo, sin necesidad de programar.
         </p>
 
-        <div className="nuclio-accordion">
+        <div className="nuclio-accordion reveal">
           {MODULES.map((mod, i) => (
             <AccordionItem
               key={mod.title}

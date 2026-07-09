@@ -28,7 +28,7 @@ export default function Valoran() {
           </div>
           <h2>Lo que más <span className="accent">destacan</span> nuestros alumnos</h2>
         </div>
-        <div className="val-grid">
+        <div className="val-grid reveal-stagger">
           {CARDS.map((c) => (
             <div className="val-card" key={c.title}>
               <span className="val-tag">{c.tag}</span>

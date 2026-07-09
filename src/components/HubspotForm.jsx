@@ -9,7 +9,7 @@ const HS_REGION = 'na1';
 // (el CSS/JS de la página no puede tocar el interior del iframe por CORS).
 const HS_FORM_CSS = `
   body{font-family:'Manrope',-apple-system,Arial,sans-serif;}
-  .hs-form-field{margin-bottom:14px;}
+  .hs-form-field{margin-bottom:16px;}
   .hs-form-field label{font-size:13.5px;font-weight:600;color:#333;margin-bottom:4px;display:block;}
   input.hs-input:not([type=checkbox]):not([type=radio]),
   select.hs-input,
@@ -17,13 +17,15 @@ const HS_FORM_CSS = `
   input.hs-input:not([type=checkbox]):not([type=radio]):focus,
   select.hs-input:focus,
   textarea.hs-input:focus{outline:none;border-color:#FFC630;box-shadow:0 0 0 3px rgba(255,198,48,.25);}
-  .hs-button{background:#FFC630;color:#141414;border:0;border-radius:50px;padding:15px 26px;font-weight:700;font-size:16px;cursor:pointer;width:100%;margin-top:4px;}
+  .hs-button{background:#FFC630;color:#141414;border:0;border-radius:50px;padding:15px 26px;font-weight:700;font-size:16px;cursor:pointer;width:100%;margin-top:8px;}
   .hs-button:hover{background:#ffcf4a;}
-  .legal-consent-container, .hs-richtext{font-size:11px;color:#8a8a8a;line-height:1.45;}
+  .legal-consent-container, .hs-richtext{font-size:11px;color:#8a8a8a;line-height:1.45;margin-top:6px;}
   .hs-error-msgs label{color:#e0393e;font-size:12px;font-weight:500;}
+  ul.inputs-list{list-style:none;margin:0;padding:0;}
+  li.hs-form-booleancheckbox{list-style:none;}
   .hs-form-booleancheckbox-display{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#555;font-weight:400;cursor:pointer;}
-  .hs-form-booleancheckbox-display input.hs-input{width:auto;flex:0 0 auto;margin:2px 0 0;}
-  .hs-form-booleancheckbox-display span{flex:1;}
+  .hs-form-booleancheckbox-display input.hs-input{width:auto;flex:0 0 auto;margin:2px 0 0;float:none;}
+  .hs-form-booleancheckbox-display span{flex:1;margin-left:0!important;display:inline!important;}
 `;
 
 let scriptLoadingPromise = null;

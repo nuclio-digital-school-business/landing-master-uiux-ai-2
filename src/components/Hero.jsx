@@ -16,7 +16,7 @@ export default function Hero() {
               Aprende diseño UX/UI e IA con proyectos reales, un equipo docente en activo y la
               IA integrada en todo el proceso. Sin necesidad de programar.
             </p>
-            <div className="meta">
+            <div className="meta reveal">
               <span className="full">
                 Próximas convocatorias:
                 <br />

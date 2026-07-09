@@ -1,6 +1,6 @@
 export default function Split({ imageFirst = false, imageUrl, children }) {
-  const image = <div className="ph" style={{ backgroundImage: `url('${imageUrl}')` }} />;
-  const text = <div className="txt">{children}</div>;
+  const image = <div className="ph reveal" style={{ backgroundImage: `url('${imageUrl}')` }} />;
+  const text = <div className="txt reveal">{children}</div>;
 
   return (
     <div className="split">

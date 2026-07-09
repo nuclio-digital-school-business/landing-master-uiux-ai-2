@@ -9,9 +9,10 @@ export default function MediaVideo() {
       </video>
       <div className="media-ov" />
       <div className="wrap">
-        <h2 className="media-title">
-          Formación 100% orientada al mercado. Aprende a trabajar en equipos de producto reales,
-          comunicándote con desarrollo y tomando decisiones con stakeholders.
+        <h2 className="media-title reveal">
+          Formación 100% orientada al mercado. Aprende a trabajar en{' '}
+          <span className="accent">equipos de producto reales</span>, comunicándote con
+          desarrollo y tomando decisiones con stakeholders.
         </h2>
       </div>
     </section>

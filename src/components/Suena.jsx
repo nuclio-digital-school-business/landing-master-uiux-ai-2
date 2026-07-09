@@ -1,4 +1,3 @@
-import ArrowIcon from './ArrowIcon';
 import { useFormModal } from '../context/FormModalContext';
 
 const ITEMS = [
@@ -16,11 +15,10 @@ export default function Suena() {
   return (
     <section className="sec suena">
       <div className="wrap">
-        <h2>¿Es este máster para ti?</h2>
-        <div className="suena-list">
+        <h2>¿Es este máster <span className="accent">para ti</span>?</h2>
+        <div className="suena-list reveal-stagger">
           {ITEMS.map((text) => (
             <div className="suena-item" key={text}>
-              <ArrowIcon />
               {text}
             </div>
           ))}

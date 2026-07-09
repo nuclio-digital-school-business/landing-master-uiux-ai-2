@@ -25,7 +25,7 @@ export default function Empleo() {
           <p style={{ marginTop: 18, fontWeight: 600, color: '#fff' }}>
             Perfiles a los que te prepara este máster:
           </p>
-          <div className="chips">
+          <div className="chips reveal-stagger">
             {PERFILES.map((p) => (
               <span className="chip" key={p}>
                 {p}

@@ -33,7 +33,7 @@ export default function Docentes() {
         <p className="subt">
           Profesionales en activo que integran la IA en proyectos reales de diseño y producto.
         </p>
-        <div className="team">
+        <div className="team reveal-stagger">
           {TEAM.map((t) => (
             <div className="tm" key={t.name}>
               <span className="ava" data-i={t.initials}>

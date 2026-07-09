@@ -10,8 +10,8 @@ const LOGOS = [
 ];
 
 export default function Trust() {
-  // Duplicamos la lista para que el bucle del carrusel sea invisible
-  const doubled = [...LOGOS, ...LOGOS];
+  // Triplicamos la lista para que el bucle sea invisible incluso en pantallas muy anchas
+  const tripled = [...LOGOS, ...LOGOS, ...LOGOS];
 
   return (
     <section className="sec trust">
@@ -24,7 +24,7 @@ export default function Trust() {
         </p>
         <div className="logo-carousel">
           <div className="logo-track">
-            {doubled.map((logo, i) => (
+            {tripled.map((logo, i) => (
               <span className="logo-badge" key={`${logo.alt}-${i}`} aria-hidden={i >= LOGOS.length}>
                 <img src={logo.src} alt={i < LOGOS.length ? logo.alt : ''} className="logo-img" />
               </span>
