@@ -17,7 +17,9 @@ strong{font-weight:700;}
 /* Fondos blancos redondeados (estilo landing 1) */
 .valoran,
 .docentes,
-.sec-white{border-radius:40px;overflow:hidden;}
+.sec-white,
+.temario,
+.empleo{border-radius:40px;overflow:hidden;}
 .arrowbadge{width:34px;height:34px;flex:0 0 34px;display:inline-block;vertical-align:middle;}
 .arrowbadge.sm{width:22px;height:22px;flex:0 0 22px;}
 
@@ -43,9 +45,9 @@ strong{font-weight:700;}
 .hero{background:radial-gradient(55% 75% at 88% 25%, rgba(255,198,48,.14), transparent 60%), var(--ink);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden;}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:start;}
 .hero .kicker{display:inline-block;background:rgba(255,198,48,.15);color:var(--yellow);border:1px solid rgba(255,198,48,.4);border-radius:50px;padding:6px 14px;font-size:13px;font-weight:600;margin-bottom:20px;}
-.hero h1{font-weight:700;font-size:50px;line-height:1.05;letter-spacing:-.03em;margin-bottom:20px;}
+.hero h1{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:50px;line-height:1.05;letter-spacing:-.02em;margin-bottom:20px;}
 .hero p.lead{font-size:19px;color:#e7e7e7;font-weight:400;margin-bottom:26px;max-width:520px;}
-.hero .meta{display:flex;flex-direction:column;font-size:15px;line-height:1.5;color:#cfcfcf;margin-bottom:30px;max-width:440px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:4px 24px;}
+.hero .meta{display:flex;flex-direction:column;font-size:15px;line-height:1.5;color:#cfcfcf;margin-bottom:30px;max-width:440px;background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:4px 24px;}
 .hero .meta span{padding:14px 0;border-top:1px solid rgba(255,255,255,.1);}
 .hero .meta span:first-child{border-top:0;}
 .hero .meta b{color:#fff;font-weight:700;}
@@ -62,6 +64,20 @@ strong{font-weight:700;}
 .lead-form input:focus{outline:none;border-color:var(--yellow);box-shadow:0 0 0 3px rgba(255,198,48,.25);}
 .lead-form .btn{width:100%;justify-content:center;}
 .lead-form .legal{font-size:11px;color:#8a8a8a;margin-top:11px;line-height:1.45;}
+
+/* Trust — carrusel de logos a color */
+.trust{background:#141414;color:#fff;text-align:center;}
+.trust .eyebrow{color:var(--yellow);justify-content:center;}
+.trust-sub{color:#c4c4c4;max-width:640px;margin:0 auto 28px;font-size:15px;}
+.logo-carousel{overflow:hidden;width:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+.logo-track{display:flex;align-items:center;gap:20px;width:max-content;animation:logoScroll 28s linear infinite;}
+.logo-track:hover{animation-play-state:paused;}
+@keyframes logoScroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+.logo-badge{display:inline-flex;align-items:center;justify-content:center;}
+.logo-img{height:40px;width:auto;object-fit:contain;}
 
 /* Intro narrative */
 .intro{background:var(--paper);}

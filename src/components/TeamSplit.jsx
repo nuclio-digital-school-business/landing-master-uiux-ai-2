@@ -1,4 +1,5 @@
 import Split from './Split';
+import Icon from './Icon';
 
 export default function TeamSplit() {
   return (
@@ -6,7 +7,7 @@ export default function TeamSplit() {
       <div className="wrap">
         <Split imageUrl="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=1100">
           <div className="eyebrow">
-            Quién te acompaña
+            <Icon name="people" /> Quién te acompaña
           </div>
           <h2>Aprendes con <span className="accent">profesionales en activo</span> que diseñan producto cada día</h2>
           <p>

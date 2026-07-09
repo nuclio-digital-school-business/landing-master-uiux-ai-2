@@ -1,4 +1,5 @@
 import Split from './Split';
+import Icon from './Icon';
 
 export default function BuildSplit() {
   return (
@@ -9,7 +10,7 @@ export default function BuildSplit() {
           imageUrl="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1100"
         >
           <div className="eyebrow">
-            Lo que te llevas
+            <Icon name="folder" /> Lo que te llevas
           </div>
           <h2>Construye un <span className="accent">portfolio completo</span> para dar el salto</h2>
           <p>

@@ -1,3 +1,5 @@
+import Icon from './Icon';
+
 const CARDS = [
   {
     tag: 'Metodología',
@@ -22,7 +24,7 @@ export default function Valoran() {
       <div className="wrap">
         <div className="head">
           <div className="eyebrow">
-            Lo que cuentan quienes ya lo hicieron
+            <Icon name="quote" /> Lo que cuentan quienes ya lo hicieron
           </div>
           <h2>Lo que más <span className="accent">destacan</span> nuestros alumnos</h2>
         </div>
