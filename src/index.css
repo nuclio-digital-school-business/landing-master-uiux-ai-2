@@ -86,7 +86,7 @@ strong{font-weight:700;}
 .form-card h3{font-size:21px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px;}
 .form-card p.small{font-size:13.5px;color:#666;margin-bottom:16px;}
 .lead-form label{display:block;font-size:13px;font-weight:600;color:#333;margin:0 0 5px;}
-.lead-form input{width:100%;padding:13px 18px;border:1px solid #d5d5d5;border-radius:999px;font-size:15px;font-family:inherit;margin-bottom:13px;background:#fff;color:#141414;}
+.lead-form input{width:100%;padding:15px 18px;border:1px solid #d5d5d5;border-radius:999px;font-size:15px;font-family:inherit;margin-bottom:13px;background:#fff;color:#141414;}
 .lead-form input:focus{outline:none;border-color:var(--yellow);box-shadow:0 0 0 3px rgba(255,198,48,.25);}
 .lead-form .btn{width:100%;justify-content:center;margin-top:2px;}
 .lead-form .legal{font-size:11px;color:#8a8a8a;margin-top:11px;line-height:1.45;}
@@ -291,7 +291,7 @@ strong{font-weight:700;}
 .team-combined{margin-top:36px;padding-top:28px;}
 .team-combined__label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#9a7a12;margin-bottom:16px;}
 .tm{text-align:center;}
-.tm .ava{width:100%;aspect-ratio:1/1;border-radius:50%;background:var(--grey2);overflow:hidden;position:relative;display:grid;place-items:center;font-weight:800;font-size:30px;color:#141414;margin-bottom:12px;}
+.tm .ava{width:100%;max-width:120px;margin:0 auto 12px;aspect-ratio:1/1;border-radius:50%;background:var(--grey2);overflow:hidden;position:relative;display:grid;place-items:center;font-weight:800;font-size:30px;color:#141414;}
 .tm .ava::before{content:attr(data-i);}
 .tm .ava img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .tm h4{font-size:16.5px;font-weight:700;letter-spacing:-.01em;}
@@ -368,4 +368,4 @@ strong{font-weight:700;}
   .media-title{font-size:21px;}
   .intro h2{font-size:26px;}
 }
-@media (max-width:520px){ .team{grid-template-columns:1fr;} }
+@media (max-width:520px){ .team-combined .team{grid-template-columns:repeat(2,1fr);gap:14px;} }

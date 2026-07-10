@@ -11,9 +11,27 @@ const HS_FORM_CSS = `
   body{font-family:'Manrope',-apple-system,Arial,sans-serif;}
   .hs-form-field{margin-bottom:16px;}
   .hs-form-field label{font-size:13.5px;font-weight:600;color:#333;margin-bottom:4px;display:block;}
-  .hs-input{width:100%;padding:13px 18px;border:1px solid #d5d5d5;border-radius:999px;font-size:15px;color:#141414;background:#fff;box-sizing:border-box;}
+  input.hs-input[type=text],
+  input.hs-input[type=email],
+  input.hs-input[type=tel],
+  input.hs-input[type=number],
+  select.hs-input,
+  textarea.hs-input{
+    width:100% !important;
+    padding:15px 18px !important;
+    border:1px solid #d5d5d5 !important;
+    border-radius:999px !important;
+    font-size:15px !important;
+    line-height:1.3 !important;
+    height:auto !important;
+    color:#141414 !important;
+    background:#fff !important;
+    box-sizing:border-box !important;
+    -webkit-appearance:none;
+    appearance:none;
+  }
   input.hs-input[type=checkbox],input.hs-input[type=radio]{width:auto;padding:0;border-radius:0;}
-  .hs-input:focus{outline:none;border-color:#FFC630;box-shadow:0 0 0 3px rgba(255,198,48,.25);}
+  .hs-input:focus{outline:none !important;border-color:#FFC630 !important;box-shadow:0 0 0 3px rgba(255,198,48,.25) !important;}
   .hs-button{background:#FFC630;color:#141414;border:0;border-radius:50px;padding:15px 26px;font-weight:700;font-size:16px;cursor:pointer;width:100%;margin-top:8px;}
   .hs-button:hover{background:#ffcf4a;}
   .legal-consent-container, .hs-richtext{font-size:11px;color:#8a8a8a;line-height:1.45;margin-top:6px;}
@@ -21,7 +39,7 @@ const HS_FORM_CSS = `
   ul.inputs-list{list-style:none;margin:0;padding:0;}
   li.hs-form-booleancheckbox{list-style:none;}
   .hs-form-booleancheckbox-display{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#555;font-weight:400;cursor:pointer;}
-  .hs-form-booleancheckbox-display input.hs-input{width:auto;flex:0 0 auto;margin:2px 0 0;float:none;}
+  .hs-form-booleancheckbox-display input.hs-input{width:auto !important;flex:0 0 auto;margin:2px 0 0 !important;float:none;padding:0 !important;border-radius:0 !important;}
   .hs-form-booleancheckbox-display span{flex:1;margin-left:0!important;display:inline!important;}
 `;
 
