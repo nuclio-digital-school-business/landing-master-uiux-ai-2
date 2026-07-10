@@ -22,7 +22,7 @@ export default function Valoran() {
   return (
     <section className="sec valoran">
       <div className="wrap">
-        <div className="head">
+        <div className="head reveal">
           <div className="eyebrow">
             <Icon name="quote" /> Lo que cuentan quienes ya lo hicieron
           </div>
@@ -38,6 +38,10 @@ export default function Valoran() {
           ))}
         </div>
         <p className="note">Basado en las valoraciones de estudiantes de ediciones anteriores.</p>
+
+        <p className="valoran-closing reveal">
+          Construye un <span className="accent">portfolio completo</span> para dar el salto.
+        </p>
       </div>
     </section>
   );

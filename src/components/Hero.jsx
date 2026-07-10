@@ -1,4 +1,5 @@
 import ContactFormCard from './ContactFormCard';
+import HeroInfoStrip from './HeroInfoStrip';
 
 export default function Hero() {
   return (
@@ -6,39 +7,23 @@ export default function Hero() {
       <div className="wrap">
         <div className="hero-grid">
           <div>
-            <span className="kicker">Acreditado por EUNEIZ (30 ECTS)</span>
-            <h1>
+            <span className="kicker load-in load-in-1">Acreditado por EUNEIZ (30 ECTS)</span>
+            <h1 className="load-in load-in-2">
               Máster en
               <br />
               UXUI &amp; <span className="accent">AI Design</span>
             </h1>
-            <p className="lead">
-              Aprende diseño UX/UI e IA con proyectos reales, un equipo docente en activo y la
-              IA integrada en todo el proceso. Sin necesidad de programar.
+            <p className="lead lead--big load-in load-in-3">
+              Un máster 100% práctico para convertirte en UX/UI Designer{' '}
+              <span className="accent">y salir con un portfolio que puedes defender.</span>
             </p>
-            <div className="meta reveal">
-              <span className="full">
-                Próximas convocatorias:
-                <br />
-                Online: <b>Septiembre 2026</b>
-                <br />
-                Barcelona: <b>Octubre 2026</b>
-              </span>
-              <span>
-                Duración: <b>25 semanas</b>
-              </span>
-              <span>
-                Modalidad: <b>Online y presencial</b>
-              </span>
-              <span>
-                Bonificación: <b>Fundae</b>
-              </span>
-              <span>
-                Acceso al <b>campus vitalicio</b>
-              </span>
+            <div className="load-in load-in-4">
+              <HeroInfoStrip />
             </div>
           </div>
-          <ContactFormCard targetId="hs-form-hero" />
+          <div className="load-in load-in-5">
+            <ContactFormCard targetId="hs-form-hero" />
+          </div>
         </div>
       </div>
     </section>

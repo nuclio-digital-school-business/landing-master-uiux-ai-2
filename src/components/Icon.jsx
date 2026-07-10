@@ -46,6 +46,16 @@ const ICONS = {
       fill="#141414"
     />
   ),
+  check: (
+    <path
+      d="M13 20.5 17.5 25 27 14.5"
+      stroke="#141414"
+      strokeWidth="2.6"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
 };
 
 export default function Icon({ name, className = 'arrowbadge sm' }) {

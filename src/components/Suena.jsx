@@ -1,4 +1,6 @@
 import { useFormModal } from '../context/FormModalContext';
+import ImageCarousel from './ImageCarousel';
+import Icon from './Icon';
 
 const ITEMS = [
   'Quieres entrar en UX/UI y diseño de producto, pero no tienes un portfolio que enseñar.',
@@ -9,21 +11,35 @@ const ITEMS = [
   'Necesitas formarte sin dejar tu trabajo y salir con algo demostrable.',
 ];
 
+const IMAGES = [
+  '/images/DSC_0661.jpg',
+  '/images/IMG_3237.jpg',
+  'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1600',
+];
+
 export default function Suena() {
   const { openModal } = useFormModal();
 
   return (
     <section className="sec suena">
       <div className="wrap">
-        <h2>¿Es este máster <span className="accent">para ti</span>?</h2>
-        <div className="suena-list reveal-stagger">
+        <div className="suena-banner">
+          <ImageCarousel images={IMAGES} />
+          <div className="suena-banner__overlay">
+            <h2>¿Es este máster <span className="accent">para ti</span>?</h2>
+          </div>
+        </div>
+
+        <div className="suena-grid reveal-stagger">
           {ITEMS.map((text) => (
-            <div className="suena-item" key={text}>
-              {text}
+            <div className="suena-check" key={text}>
+              <Icon name="check" className="arrowbadge sm suena-check__icon" />
+              <p>{text}</p>
             </div>
           ))}
         </div>
-        <div style={{ marginTop: 32 }}>
+
+        <div className="cta-center">
           <button type="button" className="btn btn-yellow" onClick={openModal}>
             Quiero dar el siguiente paso
           </button>

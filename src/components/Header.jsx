@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="topbar">
       <div className="wrap">
-        <div className="logo">
+        <div className="logo load-in load-in-1">
           <img
             className="logo-img"
             src="https://nuclio.school/wp-content/uploads/2026/05/NDS_Negative.webp"
@@ -20,7 +20,7 @@ export default function Header() {
             <span className="logo-sub">digital school</span>
           </span>
         </div>
-        <button type="button" className="btn btn-yellow" onClick={openModal}>
+        <button type="button" className="btn btn-yellow load-in load-in-2" onClick={openModal}>
           Solicita información
         </button>
       </div>

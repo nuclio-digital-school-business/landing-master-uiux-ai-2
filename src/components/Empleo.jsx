@@ -1,4 +1,3 @@
-import Split from './Split';
 import Icon from './Icon';
 
 const PERFILES = ['UX Researcher', 'UX/UI Designer', 'Product Designer', 'Design Consultant', 'UX Strategist'];
@@ -7,10 +6,7 @@ export default function Empleo() {
   return (
     <section className="sec empleo">
       <div className="wrap">
-        <Split
-          imageFirst
-          imageUrl="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1100"
-        >
+        <div className="empleo-txt reveal">
           <div className="eyebrow" style={{ color: 'var(--yellow)' }}>
             <Icon name="rocket" /> Después del máster
           </div>
@@ -32,7 +28,7 @@ export default function Empleo() {
               </span>
             ))}
           </div>
-        </Split>
+        </div>
       </div>
     </section>
   );

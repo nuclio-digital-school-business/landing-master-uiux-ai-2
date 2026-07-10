@@ -5,7 +5,7 @@ export default function Signup() {
     <section className="sec signup" id="solicita">
       <div className="wrap">
         <div className="signup-grid">
-          <div>
+          <div className="reveal">
             <h2><span className="accent">¿Hablamos?</span></h2>
             <p>
               Déjanos tus datos y un asesor se pondrá en contacto contigo para resolver tus dudas
