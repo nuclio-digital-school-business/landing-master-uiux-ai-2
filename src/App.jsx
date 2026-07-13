@@ -15,8 +15,7 @@ import MediaVideo from './components/MediaVideo';
 import Trust from './components/Trust';
 import Valoran from './components/Valoran';
 import Suena from './components/Suena';
-// Temario.jsx oculto por ahora — el archivo se conserva por si se necesita de nuevo
-// import Temario from './components/Temario';
+import Temario from './components/Temario';
 import Empleo from './components/Empleo';
 // import Docentes from './components/Docentes';
 import Signup from './components/Signup';
@@ -33,12 +32,12 @@ export default function App() {
       <Hero />
       {/* <Intro /> — sustituido por HeroInfoStrip dentro de Hero */}
       <TeamCombined />
+      <Temario />
       <MediaVideo />
       <Valoran />
       <Trust />
       {/* <BuildSplit /> — oculto */}
       <Suena />
-      {/* <Temario /> — oculto */}
       <Empleo />
       {/* <Docentes /> — fusionado dentro de TeamCombined */}
       <Signup />
