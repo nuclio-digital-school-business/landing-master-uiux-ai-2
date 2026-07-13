@@ -341,7 +341,7 @@ strong{font-weight:700;}
   .signup-grid{grid-template-columns:1fr;}
   .signup .form-card{display:none;}
   .rail-form{display:block;position:fixed;top:86px;right:calc(50vw - 600px + 24px);width:344px;z-index:55;}
-  .rail-form .form-card{max-height:calc(100vh - 108px);overflow:auto;box-shadow:0 12px 28px rgba(0,0,0,.14);}
+  .rail-form .form-card{box-shadow:0 12px 28px rgba(0,0,0,.14);}
 }
 @media (min-width:1000px) and (max-width:1248px){
   .rail-form{right:24px;}
