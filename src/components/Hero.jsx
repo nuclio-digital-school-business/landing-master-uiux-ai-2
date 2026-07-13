@@ -21,19 +21,20 @@ export default function Hero() {
               <HeroInfoStrip />
             </div>
           </div>
+
+          <div className="hero-partners load-in">
+            <span className="lbl">Partners &amp; herramientas:</span>
+            <span className="logo-badge">
+              <img src="/images/figma.png" alt="Figma" className="logo-img-sm" />
+            </span>
+            <span className="logo-badge">
+              <img src="/images/image-190-1.png" alt="Condens" className="logo-img-sm" />
+            </span>
+          </div>
+
           <div className="load-in load-in-5">
             <ContactFormCard targetId="hs-form-hero" />
           </div>
-        </div>
-
-        <div className="hero-partners load-in">
-          <span className="lbl">Partners &amp; herramientas:</span>
-          <span className="logo-badge">
-            <img src="/images/figma.png" alt="Figma" className="logo-img-sm" />
-          </span>
-          <span className="logo-badge">
-            <img src="/images/image-190-1.png" alt="Condens" className="logo-img-sm" />
-          </span>
         </div>
       </div>
     </section>

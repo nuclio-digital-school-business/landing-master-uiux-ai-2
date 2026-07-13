@@ -16,7 +16,7 @@ export default function Footer() {
             <span className="logo-sub">digital school</span>
           </span>
         </div>
-        <span>Máster en UXUI &amp; AI Design · Acreditado por EUNEIZ (30 ECTS) · Variante B</span>
+        <span>Máster en UXUI &amp; AI Design · Acreditado por EUNEIZ (30 ECTS)</span>
       </div>
     </div>
   );

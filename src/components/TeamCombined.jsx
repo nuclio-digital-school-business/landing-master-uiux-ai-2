@@ -63,7 +63,7 @@ const TEAM = [
 
 export default function TeamCombined() {
   return (
-    <section className="sec sec-team" style={{ background: '#fff' }}>
+    <section className="sec sec-team" style={{ background: '#242424' }}>
       <div className="wrap">
         <div className="team-top">
           <div className="team-intro">
@@ -87,13 +87,7 @@ export default function TeamCombined() {
 
           <div className="directors reveal-stagger">
             {DIRECTORS.map((d) => (
-              <a
-                className="director-card"
-                href={d.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={d.name}
-              >
+              <div className="director-card" key={d.name}>
                 <span className="director-card__ava" data-i={d.initials}>
                   <img src={d.img} alt={d.name} onError={(e) => e.currentTarget.remove()} />
                 </span>
@@ -104,7 +98,7 @@ export default function TeamCombined() {
                     {d.role} en <span className="company">{d.company}</span>
                   </p>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>
@@ -113,13 +107,7 @@ export default function TeamCombined() {
           <span className="team-combined__label">Resto del equipo docente</span>
           <div className="team-small reveal-stagger">
             {TEAM.map((t) => (
-              <a
-                className="tm-small"
-                href={t.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={t.name}
-              >
+              <div className="tm-small" key={t.name}>
                 <span className="ava-small" data-i={t.initials}>
                   <img src={t.img} alt={t.name} onError={(e) => e.currentTarget.remove()} />
                 </span>
@@ -129,7 +117,7 @@ export default function TeamCombined() {
                     {t.role} · <span className="company">{t.company}</span>
                   </span>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>
