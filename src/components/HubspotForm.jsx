@@ -55,6 +55,7 @@ const HS_FORM_CSS = `
   .hs-fieldtype-intl-phone select.hs-input{
     width:38% !important;
     flex:0 0 38% !important;
+    min-width:0 !important;
     float:none !important;
     padding-left:14px !important;
     padding-right:8px !important;
@@ -64,6 +65,7 @@ const HS_FORM_CSS = `
   }
   .hs-fieldtype-intl-phone input.hs-input[type=tel]{
     width:auto !important;
+    min-width:0 !important;
     flex:1 !important;
     float:none !important;
   }
