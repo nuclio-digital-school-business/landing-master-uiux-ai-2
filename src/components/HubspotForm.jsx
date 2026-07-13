@@ -41,6 +41,32 @@ const HS_FORM_CSS = `
   .hs-form-booleancheckbox-display{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#555;font-weight:400;cursor:pointer;}
   .hs-form-booleancheckbox-display input.hs-input{width:auto !important;flex:0 0 auto;margin:2px 0 0 !important;float:none;padding:0 !important;border-radius:0 !important;}
   .hs-form-booleancheckbox-display span{flex:1;margin-left:0!important;display:inline!important;}
+
+  /* Campo de teléfono internacional (selector de país + número en línea) */
+  .hs-fieldtype-intl-phone.hs-input{
+    padding:0 !important;
+    background:none !important;
+    border:none !important;
+    height:auto !important;
+    display:flex !important;
+    gap:8px;
+    width:100% !important;
+  }
+  .hs-fieldtype-intl-phone select.hs-input{
+    width:38% !important;
+    flex:0 0 38% !important;
+    float:none !important;
+    padding-left:14px !important;
+    padding-right:8px !important;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .hs-fieldtype-intl-phone input.hs-input[type=tel]{
+    width:auto !important;
+    flex:1 !important;
+    float:none !important;
+  }
 `;
 
 let scriptLoadingPromise = null;
