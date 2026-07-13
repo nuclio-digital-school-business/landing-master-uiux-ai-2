@@ -420,30 +420,31 @@ strong{font-weight:700;}
 }
 
 @media (max-width:900px){
-  .info-strip__row{
-    display:flex;
-    flex-direction:column;
-    gap:0;
-    background:rgba(255,255,255,.14);
-    -webkit-backdrop-filter:blur(12px);
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,.22);
-    border-radius:16px;
-    padding:4px 22px;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
+  .info-strip__row {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    padding: 4px 22px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 30px;
   }
-  .info-pill{
-    background:transparent;
-    border:0;
-    border-top:1px solid rgba(255,255,255,.12);
-    border-radius:0;
-    padding:12px 0;
-    width:100%;
-    justify-content:flex-start;
-    text-align:left;
-    white-space:normal;
+  .info-pill {
+    background: transparent;
+    backdrop-filter: none; /* 👈 clave para evitar el doble blur/fondo */
+    border-width: 1px 0px 0px;
+    border-style: solid none none;
+    border-color: rgba(255, 255, 255, 0.12) currentcolor currentcolor;
+    border-radius: 0px;
+    padding: 12px 0px;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    white-space: normal;
   }
-  .info-pill:first-child{border-top:0;}
+  .info-pill:first-child { border-top: 0px; }
   .servicios{grid-template-columns:1fr;}
   .team-top{grid-template-columns:1fr;gap:24px;}
   .directors{margin-top:0;height:auto;}
